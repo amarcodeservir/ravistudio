@@ -58,7 +58,7 @@ const Footer = () => {
               { icon: 'facebook', link: '#' },
               { icon: 'instagram', link: '#' },
               { icon: 'linkedin', link: '#' },
-              { icon: 'pinterest', link: '#' },
+              { icon: 'whatsapp', link: '#' },
               { icon: 'youtube', link: '#' },
             ].map((social, index) => (
               <a

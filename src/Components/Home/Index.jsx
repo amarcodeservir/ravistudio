@@ -9,8 +9,9 @@ function Index() {
       {/* //zxfguipo[pioudx bopljhkb ] */}
       <ImageSlider />
       <Discription />
-      <Gallary />
       <Ouerservice />
+      <Gallary />
+      
     </div>
   );
 }
