@@ -1,7 +1,7 @@
 import React from "react";
-// import img1 from '../../assets/gallaryimg/birthdayimg1.png'; // Image 1
-// import img2 from '../../assets/gallaryimg/fashionbag.jpg'; // Image 2
-// import img3 from '../../assets/gallaryimg/weddingimg1.jpg'; // Image 3
+import img1 from "../../assets/birthdayimg1.png"; // Image 1
+import img2 from "../../assets/birthdayimg1.png"; // Image 2
+import img3 from "../../assets/birthdayimg1.png"; // Image 3
 
 function Gallary() {
   return (
@@ -22,7 +22,7 @@ function Gallary() {
         <div className="relative w-full h-72 rounded-xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105">
           <img
             className="w-full h-full object-cover"
-            // src={img1}
+            src={img1}
             alt="Wedding Image 1"
           />
           <div className="absolute bottom-4 left-4 text-white text-2xl font-serif bg-black bg-opacity-50 px-4 py-2 rounded-lg">
@@ -34,7 +34,7 @@ function Gallary() {
         <div className="relative w-full h-72 rounded-xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105">
           <img
             className="w-full h-full object-cover"
-            // src={img2}
+            src={img2}
             alt="Wedding Image 2"
           />
           <div className="absolute bottom-4 left-4 text-white text-2xl font-serif bg-black bg-opacity-50 px-4 py-2 rounded-lg">
@@ -46,7 +46,7 @@ function Gallary() {
         <div className="relative w-full h-72 rounded-xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105">
           <img
             className="w-full h-full object-cover"
-            // src={img3}
+            src={img3}
             alt="Wedding Image 3"
           />
           <div className="absolute bottom-4 left-4 text-white text-2xl font-serif bg-black bg-opacity-50 px-4 py-2 rounded-lg">

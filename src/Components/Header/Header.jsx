@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import logo from "../../assets/Ravilogohd.png"; // Import the logo image
+import logo from "../../assets/Ravilogohd.png"; // Import the logo image
 const Header = () => {
   const navLinks = [
     { id: 1, name: "Home", path: "/" },
@@ -24,7 +24,7 @@ const Header = () => {
         <div className="container mx-auto flex items-center justify-between py-4 px-6">
           {/* Logo */}
           <div className="font-bold">
-            {/* <Link
+            <Link
               to="/"
               className="hover:text-gray-300 transition duration-300"
             >
@@ -33,7 +33,7 @@ const Header = () => {
                 alt="MyWebsite Logo"
                 className="h-10" // Adjust the height of your logo as needed
               />
-            </Link> */}
+            </Link>
           </div>
 
           {/* Navbar Links */}
@@ -75,7 +75,7 @@ const Header = () => {
             {/* "Book Us" Button */}
             <Link
               to="/contact"
-              className="bg-primary text-secondary px-6 py-2  transition duration-300 rounded-full"
+              className="bg-primary text-secondary px-6 py-2 bg-yellow-500 transition duration-300 rounded-full"
             >
               Book Us
             </Link>
