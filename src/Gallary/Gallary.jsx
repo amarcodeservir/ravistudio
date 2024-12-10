@@ -1,15 +1,19 @@
-import React from 'react';
-import img1 from '../../assets/gallaryimg/birthdayimg1.png'; // Image 1
-import img2 from '../../assets/gallaryimg/fashionbag.jpg'; // Image 2
-import img3 from '../../assets/gallaryimg/weddingimg1.jpg'; // Image 3
+import React from "react";
+// import img1 from '../../assets/gallaryimg/birthdayimg1.png'; // Image 1
+// import img2 from '../../assets/gallaryimg/fashionbag.jpg'; // Image 2
+// import img3 from '../../assets/gallaryimg/weddingimg1.jpg'; // Image 3
 
 function Gallary() {
   return (
     <div className="w-full py-16 bg-gray-50">
       {/* Section Title */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-serif text-gray-800">Our Beautiful Moments</h2>
-        <p className="mt-4 text-lg text-gray-600">A collection of memories captured with love.</p>
+        <h2 className="text-4xl font-serif text-gray-800">
+          Our Beautiful Moments
+        </h2>
+        <p className="mt-4 text-lg text-gray-600">
+          A collection of memories captured with love.
+        </p>
       </div>
 
       {/* Card Grid Container */}
@@ -18,7 +22,7 @@ function Gallary() {
         <div className="relative w-full h-72 rounded-xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105">
           <img
             className="w-full h-full object-cover"
-            src={img1}
+            // src={img1}
             alt="Wedding Image 1"
           />
           <div className="absolute bottom-4 left-4 text-white text-2xl font-serif bg-black bg-opacity-50 px-4 py-2 rounded-lg">
@@ -30,7 +34,7 @@ function Gallary() {
         <div className="relative w-full h-72 rounded-xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105">
           <img
             className="w-full h-full object-cover"
-            src={img2}
+            // src={img2}
             alt="Wedding Image 2"
           />
           <div className="absolute bottom-4 left-4 text-white text-2xl font-serif bg-black bg-opacity-50 px-4 py-2 rounded-lg">
@@ -42,7 +46,7 @@ function Gallary() {
         <div className="relative w-full h-72 rounded-xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105">
           <img
             className="w-full h-full object-cover"
-            src={img3}
+            // src={img3}
             alt="Wedding Image 3"
           />
           <div className="absolute bottom-4 left-4 text-white text-2xl font-serif bg-black bg-opacity-50 px-4 py-2 rounded-lg">
