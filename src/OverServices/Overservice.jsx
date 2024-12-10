@@ -8,7 +8,7 @@ const Overservice = () => {
         {/* Wedding Photography Card */}
         <div
           className="relative rounded-lg overflow-hidden bg-cover bg-center"
-          style={{ backgroundImage: `url(${weddingImage})` }}
+          // style={{ backgroundImage: `url(${weddingImage})` }}
         >
           <div className="bg-black bg-opacity-60 p-8 absolute inset-0 flex flex-col justify-between">
             <div>
@@ -17,9 +17,9 @@ const Overservice = () => {
                 Bring Your Creativity to Life
               </p>
               <p className="text-sm mt-4 leading-relaxed">
-                A wedding is typically one of the most memorable dayshfihdio .s in a
-                lifetime, one that people remember for years to come through
-                wedding photography.
+                A wedding is typically one of the most memorable dayshfihdio .s
+                in a lifetime, one that people remember for years to come
+                through wedding photography.
               </p>
             </div>
             <button className="text-yellow-400 font-semibold underline mt-4 self-start">
@@ -28,10 +28,9 @@ const Overservice = () => {
           </div>
         </div>
 
-        {/* Pre Wedding Photography Card */}
         <div
           className="relative rounded-lg overflow-hidden bg-cover bg-center"
-          style={{ backgroundImage: `url(${preWeddingImage})` }}
+          // style={{ backgroundImage: `url(${preWeddingImage})` }}
         >
           <div className="bg-black bg-opacity-60 p-8 absolute inset-0 flex flex-col justify-between">
             <div>
