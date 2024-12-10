@@ -2,6 +2,7 @@ import React from "react";
 
 function Discription() {
   return (
+    //  jkdsa csa kbw owidlk lsacpwfncsm ks
     <div className="px-8 py-5 bg-[#171717] shadow">
       <div className="flex">
         <div className="rounded-full">
