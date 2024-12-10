@@ -1,20 +1,22 @@
 import React from 'react';
-import weddingImage from '../assets/weddingimg2'; // Adjusted path
+import weddingImage from '../assets/weddingimg2.jpg'; // Adjusted path
 import preWeddingImage from '../assets/weddingimg2.jpg'; // Adjusted path
 
 const Overservice = () => {
   return (
     <div className="bg-black text-white py-12 px-4">
-      <div className="flex flex-wrap justify-between gap-8 max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
         {/* Wedding Photography Card */}
         <div
-          className="relative rounded-lg overflow-hidden bg-cover bg-center w-full md:w-[48%] h-96"
+          className="relative rounded-lg overflow-hidden w-full flex flex-col md:flex-row h-auto"
           style={{
             backgroundImage: `url(${weddingImage})`, // Corrected syntax for backgroundImage
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         >
-          <div className="bg-black bg-opacity-60 p-8 absolute inset-0 flex flex-col justify-between">
+          <div className="bg-black bg-opacity-60 p-8 flex flex-col justify-between w-full h-96">
             <div>
               <h2 className="text-3xl font-bold">Wedding Photography</h2>
               <p className="text-yellow-400 text-lg font-semibold mt-2">
@@ -32,12 +34,14 @@ const Overservice = () => {
 
         {/* Pre Wedding Photography Card */}
         <div
-          className="relative rounded-lg overflow-hidden bg-cover bg-center w-full md:w-[48%] h-96"
+          className="relative rounded-lg overflow-hidden w-full flex flex-col md:flex-row h-auto mt-8"
           style={{
             backgroundImage: `url(${preWeddingImage})`, // Corrected syntax for backgroundImage
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         >
-          <div className="bg-black bg-opacity-60 p-8 absolute inset-0 flex flex-col justify-between">
+          <div className="bg-black bg-opacity-60 p-8 flex flex-col justify-between w-full h-96">
             <div>
               <h2 className="text-3xl font-bold">Pre Wedding Photography</h2>
               <p className="text-yellow-400 text-lg font-semibold mt-2">
