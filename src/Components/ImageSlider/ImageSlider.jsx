@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const images = [
-  "https://content.jdmagicbox.com/comp/lucknow/n5/0522px522.x522.191217214046.t2n5/catalogue/fotoshoot-lucknow-lucknow-photo-studios-aic8b0128m.jpg",
+  "https://lh3.googleusercontent.com/p/AF1QipNuCxJpf3XE4Dj2wqMPunySfZHMoMENSMczunxG=s3072-w3072-h1390-rw",
 
   "https://5.imimg.com/data5/SELLER/Default/2024/7/434294286/MJ/RQ/QY/54327629/wedding-photography.jpg",
   "https://ryasktourism.com/wp-content/uploads/2024/02/weading-photoshoot-in-kolkata.webp",

@@ -4,7 +4,7 @@ import logo from "../../assets/Ravilogohd.png"; // Import the logo image
 const Header = () => {
   const navLinks = [
     { id: 1, name: "Home", path: "/" },
-    { id: 2, name: "About", path: "/about" },
+    { id: 2, name: "About", path: "About" },
     { id: 3, name: "Blog", path: "/blog" },
   ];
 
