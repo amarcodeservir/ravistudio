@@ -9,9 +9,10 @@ function Index() {
     <>
       <ImageSlider />
       <Discription />
-      <Gallary />
       <Ouerservice />
-    </>
+      <Gallary />
+      
+    </div>
   );
 }
 
