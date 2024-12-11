@@ -4,7 +4,7 @@ import preWeddingImage from '../../assets/weddingimg2.jpg'; // Adjusted path
 
 const Overservice = () => {
   return (
-    <div className="bg-black text-white py-12 px-4">
+    <div className="bg-theam text-white py-12 px-4">
       <div className="max-w-7xl mx-auto">
 
         {/* Heading "Our Expertise" */}
@@ -19,14 +19,16 @@ const Overservice = () => {
 
         {/* Wedding Photography Card */}
         <div
-          className="relative rounded-lg overflow-hidden w-full flex flex-col md:flex-row h-auto"
+          className="relative rounded-lg overflow-hidden w-full flex flex-col md:flex-row h-auto group"
           style={{
             backgroundImage: `url(${weddingImage})`, // Corrected syntax for backgroundImage
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         >
-          <div className="bg-black bg-opacity-60 p-8 flex flex-col justify-between w-full h-96">
+          {/* Overlay with wave transition effect */}
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-black opacity-0 group-hover:opacity-100 transition-all duration-2000 ease-out wave-effect"></div>
+          <div className="relative z-10 p-8 flex flex-col justify-between w-full h-96">
             <div>
               <h2 className="text-3xl font-bold">Wedding Photography</h2>
               <p className="text-primary text-lg font-semibold mt-2">
@@ -44,14 +46,16 @@ const Overservice = () => {
 
         {/* Pre Wedding Photography Card */}
         <div
-          className="relative rounded-lg overflow-hidden w-full flex flex-col md:flex-row h-auto mt-8"
+          className="relative rounded-lg overflow-hidden w-full flex flex-col md:flex-row h-auto mt-8 group"
           style={{
             backgroundImage: `url(${preWeddingImage})`, // Corrected syntax for backgroundImage
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         >
-          <div className="bg-black bg-opacity-60 p-8 flex flex-col justify-between w-full h-96">
+          {/* Overlay with wave transition effect */}
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-black opacity-0 group-hover:opacity-100 transition-all duration-2000 ease-out wave-effect"></div>
+          <div className="relative z-10 p-8 flex flex-col justify-between w-full h-96">
             <div>
               <h2 className="text-3xl font-bold">Pre Wedding Photography</h2>
               <p className="text-primary text-lg font-semibold mt-2">
@@ -69,14 +73,16 @@ const Overservice = () => {
 
         {/* Post Wedding Photography Card */}
         <div
-          className="relative rounded-lg overflow-hidden w-full flex flex-col md:flex-row h-auto mt-8"
+          className="relative rounded-lg overflow-hidden w-full flex flex-col md:flex-row h-auto mt-8 group"
           style={{
             backgroundImage: `url(${preWeddingImage})`, // Corrected syntax for backgroundImage
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         >
-          <div className="bg-black bg-opacity-60 p-8 flex flex-col justify-between w-full h-96">
+          {/* Overlay with wave transition effect */}
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-black opacity-0 group-hover:opacity-100 transition-all duration-2000 ease-out wave-effect"></div>
+          <div className="relative z-10 p-8 flex flex-col justify-between w-full h-96">
             <div>
               <h2 className="text-3xl font-bold">Post Wedding Photography</h2>
               <p className="text-primary text-lg font-semibold mt-2">

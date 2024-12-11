@@ -34,7 +34,7 @@ const ContactUs = () => {
   ];
 
   return (
-    <div className="bg-black text-white py-12 px-4">
+    <div className="bg-theam text-white py-12 px-4">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Title */}
