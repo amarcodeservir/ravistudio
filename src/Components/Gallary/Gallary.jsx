@@ -5,13 +5,13 @@ import img3 from "../../assets/birthdayimg1.png"; // Image 3
 
 function Gallary() {
   return (
-    <div className="w-full py-16 bg-gray-50">
+    <div className="w-full py-16 bg-black">
       {/* Section Title */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-serif text-gray-800">
-          Our Beautiful Moments
+        <h2 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+        Wedding Stories
         </h2>
-        <p className="mt-4 text-lg text-gray-600">
+        <p className="mt-4 text-lg text-secondary">
           A collection of memories captured with love.
         </p>
       </div>

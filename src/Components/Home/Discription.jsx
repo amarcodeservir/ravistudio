@@ -29,6 +29,7 @@ function Discription() {
       className={`px-8 py-5 bg-[#171717] shadow-2xl ${
         isInView ? "animate-fadeIn" : "opacity-0"
       } transition-opacity duration-1000 ease-in-out`}
+      
     >
       <div className="flex ">
         <div className="rounded-full overflow-hidden w-32 h-32 md:h-64 md:w-96  mb-4">
@@ -43,7 +44,7 @@ function Discription() {
           <p className="text-center py-4 px-4 text-lg sm:text-xl text-white">
             Best Wedding Photographer
           </p>
-          <h1 className="text-center py-4 px-4 text-3xl sm:text-4xl font-bold text-white">
+          <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-center">
             Ravi Studio
           </h1>
           <p className="text-center p-6 sm:px-20 text-lg sm:text-xl text-white">
