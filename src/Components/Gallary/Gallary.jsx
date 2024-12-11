@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import img1 from "../../assets/birthdayimg1.png"; // Image 1
 import img2 from "../../assets/birthdayimg1.png"; // Image 2
 import img3 from "../../assets/birthdayimg1.png"; // Image 3
@@ -25,12 +24,6 @@ const cards = [
     subtitle: "Wedding Story",
   },
 ];
-=======
-import img1 from "../../assets/Birthdayimg2.jpg"; // Image 1
-import img2 from "../../assets/fashionimg1.jpg"; // Image 2
-import img3 from "../../assets/Ring.jpg"; // Image 3
-
->>>>>>> anand
 function Gallary() {
   return (
     <div className="w-full py-4 bg-theam">
