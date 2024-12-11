@@ -39,7 +39,7 @@ const Productpage = () => {
   ];
 
   return (
-    <div className="p-6 bg-theam min-h-screen">
+    <div className="p-2 bg-theam min-h-screen">
       <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-center py-4">Our Product Services</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((product) => (

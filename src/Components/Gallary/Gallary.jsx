@@ -1,7 +1,7 @@
 import React from "react";
 import img1 from "../../assets/birthdayimg1.png"; // Image 1
-import img2 from "../../assets/birthdayimg1.png"; // Image 2
-import img3 from "../../assets/birthdayimg1.png"; // Image 3
+import img2 from "../../assets/fashionimg1.jpg"; // Image 2
+import img3 from "../../assets/Ring.jpg"; // Image 3
 const cards = [
   {
     title: "Swati & Surend",
@@ -26,7 +26,7 @@ const cards = [
 ];
 function Gallary() {
   return (
-    <div className="w-full py-4 bg-theam">
+    <div className="w-full py-8  bg-theam">
       {/* Section Title */}
       <div className="text-center mb-12">
         <h2 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
@@ -38,7 +38,7 @@ function Gallary() {
       </div>
 
       {/* Card Grid Container */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-8 py-10">
         {/* Card 1 - Image */}
         <div className="relative w-full h-72 rounded-xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105">
           <img
