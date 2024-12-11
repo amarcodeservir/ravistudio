@@ -53,7 +53,7 @@ const Header = () => {
               {/* Photography Dropdown */}
               <li className="relative group">
                 <Link
-                  to="/photography"
+                  to="#"
                   className="text-secondary hover:text-gray-300 transition duration-300 "
                 >
                   Photography

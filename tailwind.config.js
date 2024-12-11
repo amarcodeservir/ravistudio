@@ -6,6 +6,7 @@ export default {
       colors: { 
         primary: "",
         secondary: "white",
+        theam:"#161616",
       },
     },
   },
