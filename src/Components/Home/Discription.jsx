@@ -31,13 +31,14 @@ function Discription() {
       } transition-opacity duration-1000 ease-in-out`}
     >
       <div className="flex ">
-        <div className="rounded-full overflow-hidden mb-4 sm:mb-0">
+        <div className="rounded-full overflow-hidden w-32 h-32 md:h-64 md:w-96  mb-4">
           <img
             src={raviing}
             alt="Wedding Photographer"
-            className="bg-cover rounded-full object-cover "
+            className="object-cover w-full h-full"
           />
         </div>
+
         <div className="px-8 py-10 bg-[#171717] shadow text-secondary w-full">
           <p className="text-center py-4 px-4 text-lg sm:text-xl text-white">
             Best Wedding Photographer
