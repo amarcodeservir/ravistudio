@@ -2,14 +2,35 @@ import React from "react";
 import img1 from "../../assets/birthdayimg1.png"; // Image 1
 import img2 from "../../assets/birthdayimg1.png"; // Image 2
 import img3 from "../../assets/birthdayimg1.png"; // Image 3
-
+const cards = [
+  {
+    title: "Swati & Surend",
+    image: "https://via.placeholder.com/300x450",
+    subtitle: "Every love story is beautiful",
+  },
+  {
+    title: "Arushi ❤ Rituraj",
+    image: "https://via.placeholder.com/300x450",
+    subtitle: "Wedding Highlight",
+  },
+  {
+    title: "Mayank & Vaishali",
+    image: "https://via.placeholder.com/300x450",
+    subtitle: "Wedding Highlight",
+  },
+  {
+    title: "Ujjaval & Tarangani",
+    image: "https://via.placeholder.com/300x450",
+    subtitle: "Wedding Story",
+  },
+];
 function Gallary() {
   return (
     <div className="w-full py-16 bg-black">
       {/* Section Title */}
       <div className="text-center mb-12">
         <h2 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-        Wedding Stories
+          Wedding Stories
         </h2>
         <p className="mt-4 text-lg text-secondary">
           A collection of memories captured with love.
@@ -96,6 +117,38 @@ function Gallary() {
           </div>
         </div>
       </div>
+      <div className="bg-white font-sans">
+        {/* Header Section */}
+        <header className="text-center py-10 bg-gray-100">
+          <h1 className="text-4xl font-bold text-gray-800">Cinematic Films</h1>
+          <p className="text-lg text-gray-600">Capture Live Moments</p>
+          <button className="mt-4 px-6 py-2 bg-yellow-500 text-white font-semibold rounded hover:bg-yellow-600">
+            CAPTURE LIVE MOMENTS
+          </button>
+        </header>
+
+        {/* Cards Section */}
+        <section className="px-4 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="bg-white shadow-md rounded overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            >
+              <img
+                src={card.image}
+                alt={card.title}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 text-center">
+                <h2 className="text-xl font-semibold text-gray-800">
+                  {card.title}
+                </h2>
+                <p className="text-gray-600 mt-2">{card.subtitle}</p>
+              </div>
+            </div>
+          ))}
+        </section>
+      </div> 
     </div>
   );
 }
