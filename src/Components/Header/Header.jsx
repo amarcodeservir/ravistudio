@@ -75,7 +75,7 @@ const Header = () => {
             {/* "Book Us" Button */}
             <Link
               to="/contact"
-              className="bg-primary text-secondary px-6 py-2 bg-yellow-500 transition duration-300 rounded-full"
+              className="bg-primary text-secondary px-6 py-2 transition duration-300 rounded-full"
             >
               Book Us
             </Link>
