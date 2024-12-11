@@ -1,40 +1,46 @@
 import React from 'react';
 
+// Import images directly
+import cushionImg from '../../assets/Cushionimg.jpg';
+import tshirtImg from '../../assets/T-shirtimg.png';
+import cupImg from '../../assets/cupimg.png';
+import mobileImg from '../../assets/Mobileimg.jpeg';
+
 const Productpage = () => {
   const products = [
     {
       id: 1,
       name: 'Cushion Printing',
-      img: 'https://via.placeholder.com/150',
+      img: cushionImg, // Use the imported image
       saleTag: '20% Off',
       offer: 'Buy 2 Get 1 Free',
     },
     {
       id: 2,
       name: 'T-shirt Printing',
-      img: 'https://via.placeholder.com/150',
+      img: tshirtImg, // Use the imported image
       saleTag: '30% Off',
       offer: 'Free Shipping on Orders Over $50',
     },
     {
       id: 3,
       name: 'Cup Printing',
-      img: 'https://via.placeholder.com/150',
+      img: cupImg, // Use the imported image
       saleTag: '15% Off',
       offer: 'Get 1 Free With Every Purchase',
     },
     {
       id: 4,
       name: 'Mobile Cover Printing',
-      img: 'https://via.placeholder.com/150',
+      img: mobileImg, // Use the imported image
       saleTag: '25% Off',
       offer: 'Customize and Save More',
     },
   ];
 
   return (
-    <div className="p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold text-center mb-8">Our Printing Services</h1>
+    <div className="p-6 bg-theam min-h-screen">
+      <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-center py-4">Our Product Services</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((product) => (
           <div
@@ -53,7 +59,7 @@ const Productpage = () => {
               {product.name}
             </h2>
             <p className="text-gray-600 mt-2">{product.offer}</p>
-            <button className="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition-colors">
+            <button className="bg-primary text-secondary px-6 py-2 mt-4 transition duration-300 rounded-full self-start">
               Explore Now
             </button>
           </div>
