@@ -5,7 +5,10 @@ import cushionImg from "../../assets/product/2.jpg";
 import tshirtImg from "../../assets/product/2.png";
 import cupImg from "../../assets/product/3.webp";
 import mobileImg from "../../assets/product/5.jpg";
-
+import mobileImg1 from "../../assets/product/1.jpeg";
+import mobileImg2 from "../../assets/product/6.jpg";
+import mobileImg3 from "../../assets/product/7.png";
+import mobileImg4 from "../../assets/product/4.jpg";
 const Productpage = () => {
   const products = [
     {
@@ -27,6 +30,26 @@ const Productpage = () => {
       id: 4,
       name: "Mobile Cover Printing",
       img: mobileImg, // Use the imported image
+    },
+    {
+      id: 5,
+      name: "Mobile Cover Printing",
+      img: mobileImg1, // Use the imported image
+    },
+    {
+      id: 6,
+      name: "Mobile Cover Printing",
+      img: mobileImg2, // Use the imported image
+    },
+    {
+      id: 7,
+      name: "Mobile Cover Printing",
+      img: mobileImg4, // Use the imported image
+    },
+    {
+      id: 8,
+      name: "Mobile Cover Printing",
+      img: mobileImg3, // Use the imported image
     },
   ];
 
