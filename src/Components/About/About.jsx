@@ -14,19 +14,19 @@ const About = () => {
       title: "Experienced Team",
       description:
         "At Ravi Studio, our team consists of seasoned professionals who are passionate about capturing the magic of weddings. With years of experience and a keen eye for detail, our photographers and videographers bring creativity, technical skill, and artistry to every moment they capture. From candid emotions to intricate details, our experts ensure that each shot is a timeless masterpiece.We believe that every wedding is unique, and our team works closely with you to understand your vision, creating personalized experiences that go beyond your expectations. Whether it's traditional ceremonies or modern celebrations, we know how to frame your story in the most beautiful way possible.",
-      src: img,
+      src: { img },
     },
     {
       title: "Creative Approach",
       description:
         "At Ravi Studio, creativity lies at the heart of everything we do. We don’t just take pictures; we craft stories. Our approach combines artistic vision with technical excellence to ensure that every shot is unique, authentic, and deeply emotional.From finding the perfect lighting to capturing the candid smiles and heartfelt moments, our team works tirelessly to deliver images and videos that resonate with the essence of your celebration. We experiment with angles, compositions, and techniques to add a cinematic touch, turning ordinary moments into extraordinary memories.Every wedding is a one-of-a-kind story, and our creative approach ensures that yours is told in the most breathtaking and unforgettable way.",
-      src: img,
+      src: { img },
     },
     {
       title: "Customer Satisfaction",
       description:
         "At Ravi Studio, your happiness is our ultimate goal. We go above and beyond to ensure that your experience with us is seamless, enjoyable, and truly memorable. From the initial consultation to the final delivery of your wedding album and videos, every step is tailored to meet your unique needs and preferences.We pride ourselves on building strong relationships with our clients, understanding their vision, and bringing it to life with creativity and precision. Your trust motivates us to deliver nothing less than perfection, ensuring that every captured moment evokes joy and nostalgia for years to come.With countless satisfied couples and heartfelt testimonials, we are dedicated to preserving your precious memories in the most beautiful way possible. Your story deserves nothing less than excellence.",
-      src: img,
+      src: { img },
     },
   ];
 
@@ -79,14 +79,18 @@ const About = () => {
             <h2 className="text-4xl font-bold text-center mb-8">
               Why Choose Us?
             </h2>
-            <div className="flex flex-col  justify-center items-center space-y-8 sm:space-y-10 sm:space-x-8">
+            <div className="flex flex-col  justify-center items-center space-y-8 sm:space-y-10">
               {chooseUsData.map((item, index) => (
                 <div
                   key={index}
                   className="w-full  p-6 bg-[#252525] rounded-lg shadow-lg text-center transform hover:scale-95 transition duration-300"
                 >
                   <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
-                  <p className="h-64 w-44">{item.src}</p>
+                  <img
+                    src={img}
+                    alt={item.title}
+                    className="w-full h-auto rounded-lg mb-4"
+                  />
                   <p className="text-xl text-gray-300">{item.description}</p>
                 </div>
               ))}
