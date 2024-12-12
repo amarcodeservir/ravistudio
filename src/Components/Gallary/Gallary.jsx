@@ -51,7 +51,7 @@ const Gallary = () => {
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h- object-cover" // Adjusted height
+                    className="w-full h-full object-cover" // Adjusted height
                   />
                   {/* Overlay Gradient */}
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-black opacity-0 group-hover:opacity-100 transition-all duration-100 ease-out">

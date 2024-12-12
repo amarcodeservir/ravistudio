@@ -10,7 +10,7 @@ function Discription() {
         <img
           src={raviing}
           alt="Wedding Photographer"
-          className="bg-cover h-64 w-64 md:h-[650px] md:w-[2000px] object-cover rounded-full "
+          className="bg-cover h-64 w-64 md:h-[570px] md:w-[2000px] object-cover rounded-full "
         />
       </div>
       <div className="md:px-8 px-2 md:py-10   shadow text-secondary w- self-center">
