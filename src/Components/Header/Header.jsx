@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/Ravilogohd.png"; // Import the logo image
+import logo from "../../assets/RaviLogo.png"; // Import the logo image
 const Header = () => {
   const navLinks = [
     { id: 1, name: "Home", path: "/" },
@@ -13,7 +13,7 @@ const Header = () => {
     { name: "Pre-Wedding", path: "/photography/pre-wedding" },
     { name: "Post-Wedding", path: "/photography/post-wedding" },
     { name: "Fashion", path: "/photography/fashion" },
-    { name: "Birthday", path: "/photography/birthday" },
+    { name: "Birthday", path: "/birthday" },
     { name: "Kitty Party", path: "/photography/kittyparty" },
     { name: "Maternity", path: "/photography/maternity" },
   ];
@@ -51,7 +51,7 @@ const Header = () => {
               ))}
 
               {/* Photography Dropdown */}
-              <li className="relative group">
+              <li className="relative group z-50">
                 <Link
                   to="#"
                   className="text-secondary hover:text-gray-300 transition duration-300 "

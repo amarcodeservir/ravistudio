@@ -6,6 +6,7 @@ import Ouerservice from "../OverServices/Overservice";
 import ContactUs from "../ContactUs/ContactUs";
 import Productpage from "../Product/Productpage";
 
+
 function Index() {
   return (
     <>
@@ -15,6 +16,7 @@ function Index() {
       <Gallary />
       <Productpage />
       <ContactUs />
+      
     </>
   );
 }
