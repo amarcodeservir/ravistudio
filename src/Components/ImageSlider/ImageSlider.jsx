@@ -41,8 +41,8 @@ function ImageSlider() {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full relative overflow-hidden">
       {/* Image Slider Container */}
-      <div className="relative w-full h-[70vh] sm:h-[80vh] md:h-[100vh] perspective">
-        <div className="relative w-full h-full">
+      <div className="relative w-full h-[70vh] sm:h-[70vh] md:h-[80vh] lg:h-[100vh] perspective">
+        <div className="relative w-auto md:w-full h-full">
           {images.map((img, index) => (
             <img
               key={index}
@@ -59,32 +59,34 @@ function ImageSlider() {
             />
           ))}
         </div>
+
         {/* Previous Button */}
         <button
           onClick={handlePrevious}
           aria-label="Previous Slide"
-          className="absolute top-1/2 left-6 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition"
+          className="absolute top-1/2 left-3 sm:left-6 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 sm:p-3 rounded-full hover:bg-opacity-70 transition"
         >
           &#8249;
         </button>
+
         {/* Next Button */}
         <button
           onClick={handleNext}
           aria-label="Next Slide"
-          className="absolute top-1/2 right-6 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transition"
+          className="absolute top-1/2 right-3 sm:right-6 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 sm:p-3 rounded-full hover:bg-opacity-70 transition"
         >
           &#8250;
         </button>
       </div>
 
       {/* Pagination Dots */}
-      <div className="absolute bottom-6 justify-center flex gap-2 z-10">
+      <div className="absolute bottom-4 sm:bottom-6 flex justify-center gap-2 z-10">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
             aria-label={`Go to slide ${index + 1}`}
-            className={`w-4 h-1 rounded-full border-2 transition-all duration-300 ${
+            className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full border-2 transition-all duration-300 ${
               currentIndex === index
                 ? "bg-blue-500 border-blue-500"
                 : "bg-gray-400 border-gray-400"

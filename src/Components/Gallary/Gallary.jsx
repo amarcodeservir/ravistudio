@@ -35,7 +35,7 @@ function Gallary() {
         <p className="mt-2 text-lg text-secondary">
           A collection of memories captured with love.
         </p>
-      </div>
+      </section>
 
       {/* Card Grid Container */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-8 py-10">
@@ -148,9 +148,9 @@ function Gallary() {
             </div>
           ))}
         </section>
-      </div> 
+      </div>
     </div>
   );
-}
+};
 
 export default Gallary;
