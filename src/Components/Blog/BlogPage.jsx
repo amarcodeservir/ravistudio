@@ -2,7 +2,6 @@ import React from "react";
 import blog1 from "../../Components/assets/blog/blog.png";
 import blog2 from "../../Components/assets/blog/blog0.png";
 import blog3 from "../../Components/assets/blog/blog1.png";
-import Gallery from "react-photo-gallery";
 // Sample Blog Data
 const photos = [
   { key: 1, src: blog1, width: 200, height: 150 },
@@ -26,7 +25,7 @@ const BlogPage = () => {
         <h1 className="text-4xl sm:text-5xl font-bold text-center py-12 text-transparent bg-clip-text bg-gradient-to-r from-[#ff9f00] to-[#ff5700]">
           Ravi Studio Blog
         </h1>
-        <Gallery photos={photos.map((photo) => ({ ...photo }))} />
+        {/* <Gallery photos={photos.map((photo) => ({ ...photo }))} /> */}
       </div>
     </div>
   );
