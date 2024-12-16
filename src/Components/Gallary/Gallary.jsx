@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import image1 from "../../assets/gallary/gallary0.jpg";
-import image2 from "../../assets/gallary/gallary.jpg"; // Example
-import image3 from "../../assets/gallary/gallary1.png"; // Example
+import image1 from "../../Components/assets/gallary/gallary0.jpg";
+import image2 from "../../Components/assets/gallary/gallary.jpg"; // Example
+import image3 from "../../Components/assets/gallary/gallary1.png"; // Example
 import { Link } from "react-router-dom";
 
 const Gallary = () => {
@@ -47,11 +47,11 @@ const Gallary = () => {
                 whileHover={{ scale: 1.05, opacity: 0.8 }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="relative p-4 text-center h-72">
+                <div className="relative p-4 text-center h-72 md:h-80">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover" // Adjusted height
+                    className="w-full  object-cover" // Adjusted height
                   />
                   {/* Overlay Gradient */}
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-black opacity-0 group-hover:opacity-100 transition-all duration-100 ease-out">

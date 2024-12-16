@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/slider/1.png";
+// import img from "../../assets/slider/1.png";
 const About = () => {
   // Mission data
   const missionData = {
@@ -14,19 +14,19 @@ const About = () => {
       title: "Experienced Team",
       description:
         "At Ravi Studio, our team consists of seasoned professionals who are passionate about capturing the magic of weddings. With years of experience and a keen eye for detail, our photographers and videographers bring creativity, technical skill, and artistry to every moment they capture. From candid emotions to intricate details, our experts ensure that each shot is a timeless masterpiece.We believe that every wedding is unique, and our team works closely with you to understand your vision, creating personalized experiences that go beyond your expectations. Whether it's traditional ceremonies or modern celebrations, we know how to frame your story in the most beautiful way possible.",
-      src: { img },
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvmBES9SDa7YhUXWGOOWGE6WI2zmlYzJAmXSh36AjVnFHmPNFV7aunOmAfSsKVL9jHlNk&usqp=CAU",
     },
     {
       title: "Creative Approach",
       description:
         "At Ravi Studio, creativity lies at the heart of everything we do. We don’t just take pictures; we craft stories. Our approach combines artistic vision with technical excellence to ensure that every shot is unique, authentic, and deeply emotional.From finding the perfect lighting to capturing the candid smiles and heartfelt moments, our team works tirelessly to deliver images and videos that resonate with the essence of your celebration. We experiment with angles, compositions, and techniques to add a cinematic touch, turning ordinary moments into extraordinary memories.Every wedding is a one-of-a-kind story, and our creative approach ensures that yours is told in the most breathtaking and unforgettable way.",
-      src: { img },
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTmssokBmc6jUomF3iHq7HVNsDibXLT9Ko_A&s",
     },
     {
       title: "Customer Satisfaction",
       description:
         "At Ravi Studio, your happiness is our ultimate goal. We go above and beyond to ensure that your experience with us is seamless, enjoyable, and truly memorable. From the initial consultation to the final delivery of your wedding album and videos, every step is tailored to meet your unique needs and preferences.We pride ourselves on building strong relationships with our clients, understanding their vision, and bringing it to life with creativity and precision. Your trust motivates us to deliver nothing less than perfection, ensuring that every captured moment evokes joy and nostalgia for years to come.With countless satisfied couples and heartfelt testimonials, we are dedicated to preserving your precious memories in the most beautiful way possible. Your story deserves nothing less than excellence.",
-      src: { img },
+      src: "https://images.prismic.io/memoriesdesigner/caca552c-1f91-4824-94c9-48897129bd5d_mala+badal.png?auto=compress,format&rect=0,0,1499,1000&w=1000&h=667",
     },
   ];
 
@@ -36,6 +36,11 @@ const About = () => {
       quote:
         "Ravi Studio made our wedding day unforgettable! Their professionalism and creativity were beyond expectations.",
       name: "Priya & Rahul",
+    },
+    {
+      quote:
+        "We couldn't be happier with the photos and videos! Ravi Studio truly captured every special moment.",
+      name: "Aditi & Sameer",
     },
     {
       quote:
@@ -81,7 +86,7 @@ const About = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6 sm:mb-8">
               Why Choose Us?
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1  gap-8">
               {chooseUsData.map((item, index) => (
                 <div
                   key={index}
@@ -91,7 +96,7 @@ const About = () => {
                     {item.title}
                   </h3>
                   <img
-                    src={img}
+                    src={item.src}
                     alt={item.title}
                     className="w-full h-auto rounded-lg mb-4 object-cover"
                   />

@@ -1,75 +1,32 @@
 import React from "react";
-
+import blog1 from "../../Components/assets/blog/blog.png";
+import blog2 from "../../Components/assets/blog/blog0.png";
+import blog3 from "../../Components/assets/blog/blog1.png";
+import Gallery from "react-photo-gallery";
 // Sample Blog Data
-const blogData = [
-  {
-    id: 1,
-    title: "The Art of Wedding Photography",
-    author: "Ravi Studio",
-    date: "December 1, 2024",
-    image: "https://via.placeholder.com/800x400?text=Wedding+Photography",
-    excerpt:
-      "Wedding photography is more than just taking photos. It’s about capturing the essence of the love and joy of one of the most important days in a couple’s life.",
-  },
-  {
-    id: 2,
-    title: "How to Choose the Best Wedding Videographer",
-    author: "Ravi Studio",
-    date: "November 15, 2024",
-    image: "https://via.placeholder.com/800x400?text=Wedding+Videography",
-    excerpt:
-      "Choosing the right wedding videographer can make or break your wedding day experience. Here’s everything you need to know before making that decision.",
-  },
-  {
-    id: 3,
-    title: "5 Tips for a Picture-Perfect Wedding Day",
-    author: "Ravi Studio",
-    date: "October 30, 2024",
-    image: "https://via.placeholder.com/800x400?text=Picture+Perfect+Wedding",
-    excerpt:
-      "Planning your wedding is exciting, but it can also be overwhelming. Here are five essential tips to make your wedding day picture-perfect.",
-  },
+const photos = [
+  { key: 1, src: blog1, width: 200, height: 150 },
+  { key: 2, src: blog2, width: 300, height: 200 },
+  { key: 3, src: blog3, width: 250, height: 180 },
+  { key: 4, src: blog1, width: 350, height: 250 },
+  { key: 5, src: blog2, width: 400, height: 300 },
+  { key: 6, src: blog3, width: 200, height: 250 },
+  { key: 7, src: blog1, width: 4, height: 3 },
+  { key: 8, src: blog2, width: 1, height: 1 },
+  { key: 3, src: blog3, width: 3, height: 4 },
+  { key: 9, src: blog1, width: 4, height: 3 },
+  { key: 10, src: blog2, width: 1, height: 1 },
+  { key: 11, src: blog3, width: 3, height: 4 },
 ];
 
 const BlogPage = () => {
   return (
-    <div className="bg-[#171717] text-white py-16">
-      <div className="max-w-screen-xl mx-auto px-8">
-        <h1 className="text-4xl sm:text-5xl font-bold text-center mb-12">
+    <div className="bg-[#171717] text-white py-20">
+      <div className="container mx-auto px-6">
+        <h1 className="text-4xl sm:text-5xl font-bold text-center py-12 text-transparent bg-clip-text bg-gradient-to-r from-[#ff9f00] to-[#ff5700]">
           Ravi Studio Blog
         </h1>
-        <p className="text-lg sm:text-xl text-center mb-8">
-          Stay updated with the latest photography and videography tips, trends,
-          and news from Ravi Studio.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogData.map((post) => (
-            <div
-              key={post.id}
-              className="bg-[#2A3335] rounded-lg overflow-hidden shadow-lg"
-            >
-              <img
-                src={post.image}
-                alt={post.title}
-                className="w-full h-56 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-4">{post.title}</h3>
-                <p className="text-gray-400 text-sm mb-4">
-                  By {post.author} | {post.date}
-                </p>
-                <p className="text-lg mb-6">{post.excerpt}</p>
-                <a
-                  href={`/blog/${post.id}`}
-                  className="text-[#ff9f00] hover:text-[#e68900] text-lg font-semibold"
-                >
-                  Read More →
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
+        <Gallery photos={photos.map((photo) => ({ ...photo }))} />
       </div>
     </div>
   );

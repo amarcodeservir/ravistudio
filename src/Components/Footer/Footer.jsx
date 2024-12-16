@@ -19,7 +19,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className=" mx-auto px-4">
         {/* Grid Container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-4 px-2">
           {/* Column 1 - Location */}

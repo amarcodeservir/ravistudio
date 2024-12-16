@@ -1,14 +1,14 @@
 import React from "react";
 
 // Import images directly
-import cushionImg from "../../assets/product/2.jpg";
-import tshirtImg from "../../assets/product/2.png";
-import cupImg from "../../assets/product/3.webp";
-import mobileImg from "../../assets/product/5.jpg";
-import mobileImg1 from "../../assets/product/1.jpeg";
-import mobileImg2 from "../../assets/product/6.jpg";
-import mobileImg3 from "../../assets/product/7.png";
-import mobileImg4 from "../../assets/product/4.jpg";
+import cushionImg from "../../Components/assets/product/2.jpg";
+import tshirtImg from "../../Components/assets/product/2.png";
+import cupImg from "../../Components/assets/product/3.webp";
+import mobileImg from "../../Components/assets/product/5.jpg";
+import mobileImg1 from "../../Components/assets/product/1.jpeg";
+import mobileImg2 from "../../Components/assets/product/6.jpg";
+import mobileImg3 from "../../Components/assets/product/7.png";
+import mobileImg4 from "../../Components/assets/product/4.jpg";
 const Productpage = () => {
   const products = [
     {
