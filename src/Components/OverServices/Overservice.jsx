@@ -1,5 +1,5 @@
 import React from "react";
-import weddingImage from "../../Components/assets/ourService/ring.jpg";
+// import weddingImage from "../../Components/assets/ourService/ring.jpg";
 import preWeddingImage from "../../Components/assets/ourService/1.jpg";
 import postWeddingImage from "../../Components/assets/ourService/3.jpg"; // Example image
 
@@ -11,7 +11,7 @@ const Overservice = () => {
       subtitle: "Bring Your Creativity to Life",
       description:
         "A wedding is typically one of the most memorable days in a lifetime, one that people remember for years to come through wedding photography.",
-      image: weddingImage,
+      image: preWeddingImage,
       buttonLabel: "Read More",
     },
     {
