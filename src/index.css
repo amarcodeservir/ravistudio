@@ -2,30 +2,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Font Awesome CSS */
-/* @import "@fortawesome/fontawesome-free/css/all.min.css"; */
-/* 
-@keyframes waveOpacity {
-  0% {
-    background-position: -100% 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-}
-
-.wave-effect {
-  background-image: linear-gradient(
-    to right,
-    transparent 50%,
-    rgba(0, 0, 0, 0.7) 50%
-  );
-  background-size: 200% 100%;
-  transition: background-position 1s ease-out;
-  will-change: background-position;
-}
-
-.group:hover .wave-effect {
-  background-position: 100% 0;
-} */
