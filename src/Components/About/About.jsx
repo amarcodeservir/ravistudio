@@ -8,7 +8,6 @@ const About = () => {
       "At Ravi Studio, our mission is to capture the most precious moments of your wedding day with creativity and professionalism. Our experienced team works tirelessly to deliver not just photos and videos, but memories that will last a lifetime.",
   };
 
-  // Why Choose Us Data
   const chooseUsData = [
     {
       title: "Experienced Team",
