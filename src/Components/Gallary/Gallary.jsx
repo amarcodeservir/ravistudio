@@ -28,6 +28,7 @@ function Gallary() {
   return (
     <div className="w-full py-8  bg-theam">
       {/* Section Title */}
+      
       <div className="text-center mb-12">
         <h2 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
           Wedding Stories
@@ -35,7 +36,7 @@ function Gallary() {
         <p className="mt-2 text-lg text-secondary">
           A collection of memories captured with love.
         </p>
-      </section>
+      </div>
 
       {/* Card Grid Container */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-8 py-10">
