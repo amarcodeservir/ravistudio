@@ -82,10 +82,10 @@ const Footer = () => {
               <h3 className="font-bold text-lg mb-4">
                 WEDDING PHOTOGRAPHERS IN LUCKNOW
               </h3>
-              <p className="text-gray-300 mb-6">
-                <h4 className="font-bold text-base mb-2">Sukh Complex</h4>
+              <div className="text-gray-300 mb-6">
+                <p className="font-bold text-base mb-2">Sukh Complex</p>
                 Munshi Puliya, Indira Nager, Lucknow-16
-              </p>
+              </div>
             </div>
             <div className="flex space-x-4 justify-start md:justify-center mt-4">
               {socialLinks.map((social, index) => (
