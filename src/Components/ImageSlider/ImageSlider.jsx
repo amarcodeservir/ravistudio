@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import image from "../../assets/slider/1.png";
-import image1 from "../../assets/slider/2.png";
-import image2 from "../../assets/slider/3.jpg";
-import image3 from "../../assets/slider/4.jpg";
-import image4 from "../../assets/slider/5.jpg";
-import image5 from "../../assets/slider/6.png";
+import image from "../../Components/assets/slider/1.png";
+import image1 from "../../Components/assets/slider/2.png";
+import image2 from "../../Components/assets/slider/3.jpg";
+import image3 from "../../Components/assets/slider/4.jpg";
+import image4 from "../../Components/assets/slider/5.jpg";
+import image5 from "../../Components/assets/slider/6.png";
 
 const images = [image, image1, image2, image3, image4, image5];
 

@@ -38,6 +38,7 @@ function Gallary() {
         </p>
       </div>
 
+<<<<<<< HEAD
       {/* Card Grid Container */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-8 py-10">
         {/* Card 1 - Image */}
@@ -145,11 +146,41 @@ function Gallary() {
                   {card.title}
                 </h2>
                 <p className="text-gray-600 mt-2">{card.subtitle}</p>
+=======
+      {/* Gallery Section */}
+      <section className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+        {galleryItems.map((item, index) => (
+          <motion.div
+            key={index} // Added a key prop to avoid React warnings
+            className="group rounded overflow-hidden shadow-lg text-white wave-effect"
+            whileHover={{ scale: 1.05, opacity: 0.8 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="relative h-72 md:h-80">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover"
+              />
+              {/* Overlay Gradient */}
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-black opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out">
+                <div className="absolute bottom-4 left-4">
+                  <h2 className="font-semibold text-lg text-white">
+                    {item.title}
+                  </h2>
+                  <Link
+                    to=""
+                    className="text-blue-400 hover:text-blue-200 underline"
+                  >
+                    View more
+                  </Link>
+                </div>
+>>>>>>> main
               </div>
             </div>
-          ))}
-        </section>
-      </div>
+          </motion.div>
+        ))}
+      </section>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import raviing from "../../assets/ravi.png";
+import raviing from "../../Components/assets/ravi.png";
 function Discription() {
   // State to track if the component is in view for animation trigger
   const [isInView, setIsInView] = useState(false);

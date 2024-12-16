@@ -19,7 +19,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className=" mx-auto px-4">
         {/* Grid Container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-4 px-2">
           {/* Column 1 - Location */}
@@ -82,10 +82,10 @@ const Footer = () => {
               <h3 className="font-bold text-lg mb-4">
                 WEDDING PHOTOGRAPHERS IN LUCKNOW
               </h3>
-              <p className="text-gray-300 mb-6">
-                <h4 className="font-bold text-base mb-2">Sukh Complex</h4>
+              <div className="text-gray-300 mb-6">
+                <p className="font-bold text-base mb-2">Sukh Complex</p>
                 Munshi Puliya, Indira Nager, Lucknow-16
-              </p>
+              </div>
             </div>
             <div className="flex space-x-4 justify-start md:justify-center mt-4">
               {socialLinks.map((social, index) => (

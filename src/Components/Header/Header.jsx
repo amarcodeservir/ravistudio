@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import logo from "../../assets/Ravilogohd.png";
+import { Link } from "react-router-dom";
+import Dropdown from "./Dropdown";
+import logo from "../../Components/assets/logo/Ravilogohd.png";
 
 const Header = () => {
   const navLinks = [
@@ -19,10 +20,8 @@ const Header = () => {
     { name: "Maternity", path: "/photography/maternity" },
   ];
 
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,10 +35,6 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const handleDropdownToggle = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
   return (
     <header
       className={`w-full fixed z-50 ${
@@ -48,7 +43,7 @@ const Header = () => {
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
-        <div className="font-bold">
+        <div>
           <Link to="/">
             <img src={logo} alt="Logo" className="h-10" />
           </Link>
@@ -66,32 +61,8 @@ const Header = () => {
             </Link>
           ))}
 
-          {/* Dropdown Menu */}
-          <div
-            className="relative group"
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
-          >
-            <button
-              className="text-secondary hover:text-gray-300 transition duration-300"
-              onClick={handleDropdownToggle}
-            >
-              Photography
-            </button>
-            {dropdownOpen && (
-              <div className="absolute left-0 mt-2 w-[200px] bg-black text-secondary p-4 rounded-lg shadow-lg">
-                {photographySections.map((section, index) => (
-                  <Link
-                    key={index}
-                    to={section.path}
-                    className="block hover:bg-primary hover:text-black transition duration-300 px-2 py-1 rounded-md"
-                  >
-                    {section.name}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+          {/* Reusable Dropdown */}
+          <Dropdown photographySections={photographySections} />
 
           <Link
             to="/contact"
@@ -106,6 +77,7 @@ const Header = () => {
           <button
             className="text-3xl text-[#FF8C24] focus:outline-none"
             onClick={handleToggleMenu}
+            aria-label="Toggle Menu"
           >
             {menuOpen ? "✖" : "☰"}
           </button>

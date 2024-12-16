@@ -1,34 +1,34 @@
-import React from 'react';
-import img1 from "../../assets/sukh.png";
-import img2 from "../../assets/uday.png";
-import img3 from "../../assets/geetapuri.png";
-import img4 from "../../assets/yadav.png";
+import React from "react";
+import img1 from "../../Components/assets/contact/sukh.png";
+import img2 from "../../Components/assets/contact/uday.png";
+// import img3 from "../../Components/assets/contact/Geetapuri.png";
+import img4 from "../../Components/assets/contact/yadav.png";
 
 const ContactUs = () => {
   // Example data for locations
   const locations = [
     {
-      name: 'Sukh Complex',
-      address: 'Munshi Puliya, Indira Nager, Lucknow-16',
-      contact: '+91 9389998878',
+      name: "Sukh Complex",
+      address: "Munshi Puliya, Indira Nager, Lucknow-16",
+      contact: "+91 9389998878",
       image: img1, // Corrected: directly use the imported image
     },
     {
-      name: 'Uday Tower',
-      address: 'Kathauta Chauraha, Gomti Nager, Lucknow-10',
-      contact: '+91 9450091778',
+      name: "Uday Tower",
+      address: "Kathauta Chauraha, Gomti Nager, Lucknow-10",
+      contact: "+91 9450091778",
       image: img2, // Corrected: directly use the imported image
     },
     {
-      name: 'Geetapuri Chauraha',
-      address: 'Opp. Bank of India, Gomti Nager Vistar, Lucknow-10',
-      contact: '+91 8858443081',
-      image: img3, // Corrected: directly use the imported image
+      name: "Geetapuri Chauraha",
+      address: "Opp. Bank of India, Gomti Nager Vistar, Lucknow-10",
+      contact: "+91 8858443081",
+      image: img2, // Corrected: directly use the imported image
     },
     {
-      name: 'Yadav Market',
-      address: 'Opp. Citykart, Deva Road, Matiyari Chauraha, Lucknow',
-      contact: '+91 9984968898',
+      name: "Yadav Market",
+      address: "Opp. Citykart, Deva Road, Matiyari Chauraha, Lucknow",
+      contact: "+91 9984968898",
       image: img4, // Corrected: directly use the imported image
     },
   ];
@@ -36,15 +36,18 @@ const ContactUs = () => {
   return (
     <div className="bg-theam text-white py-2 px-2">
       <div className="max-w-7xl mx-auto">
-
         {/* Section Title */}
-        <h2 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary  text-center mb-8">Our Locations</h2>
+        <h2 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary  text-center mb-8">
+          Our Locations
+        </h2>
 
         {/* Grid Layout for Location Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
           {locations.map((location, index) => (
-            <div key={index} className="relative rounded-lg overflow-hidden shadow-lg">
+            <div
+              key={index}
+              className="relative rounded-lg overflow-hidden shadow-lg"
+            >
               {/* Image Background */}
               <img
                 src={location.image} // Correct usage of the imported image
@@ -63,7 +66,6 @@ const ContactUs = () => {
               </div>
             </div>
           ))}
-
         </div>
       </div>
     </div>
