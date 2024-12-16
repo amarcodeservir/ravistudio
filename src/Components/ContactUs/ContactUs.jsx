@@ -1,7 +1,7 @@
 import React from "react";
 import img1 from "../../Components/assets/contact/sukh.png";
 import img2 from "../../Components/assets/contact/uday.png";
-import img3 from "../../Components/assets/contact/Geetapuri.png";
+// import img3 from "../../Components/assets/contact/Geetapuri.png";
 import img4 from "../../Components/assets/contact/yadav.png";
 
 const ContactUs = () => {
@@ -23,7 +23,7 @@ const ContactUs = () => {
       name: "Geetapuri Chauraha",
       address: "Opp. Bank of India, Gomti Nager Vistar, Lucknow-10",
       contact: "+91 8858443081",
-      image: img3, // Corrected: directly use the imported image
+      image: img2, // Corrected: directly use the imported image
     },
     {
       name: "Yadav Market",
