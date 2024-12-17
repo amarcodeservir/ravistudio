@@ -6,7 +6,6 @@ import blog3 from "../../Components/assets/blog/blog1.png";
 // Sample Blog Data
 const photos = [
   { key: 1, src: blog1, width: 200, height: 150 },
-
   { key: 3, src: blog3, width: 250, height: 180 },
   { key: 2, src: blog2, width: 300, height: 200 },
   { key: 4, src: blog1, width: 350, height: 250 },
