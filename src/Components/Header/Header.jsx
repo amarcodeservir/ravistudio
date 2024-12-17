@@ -11,13 +11,13 @@ const Header = () => {
   ];
 
   const photographySections = [
-    { name: "Wedding", path: "/photography" },
-    { name: "PreWedding", path: "/prewedding" },
-    { name: "PostWedding", path: "/postwedding" },
-    { name: "Fashion", path: "/fashion" },
+    { name: "Wedding", path: "/photography/wedding" },
+    { name: "Pre-Wedding", path: "/photography/pre-wedding" },
+    { name: "Post-Wedding", path: "/photography/post-wedding" },
+    { name: "Fashion", path: "/photography/fashion" },
     { name: "Birthday", path: "/birthday" },
-    { name: "Kitty Party", path: "/kittyparty" },
-    { name: "Maternity", path: "/maternity" },
+    { name: "Kitty Party", path: "/photography/kittyparty" },
+    { name: "Maternity", path: "/photography/maternity" },
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
