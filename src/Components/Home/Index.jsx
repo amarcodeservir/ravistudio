@@ -5,7 +5,7 @@ import Gallary from "../Gallary/Gallary";
 import Ouerservice from "../OverServices/Overservice";
 import ContactUs from "../ContactUs/ContactUs";
 import Productpage from "../Product/Productpage";
-
+import Birthday from "../HeaderPhotography/Birthday";
 
 function Index() {
   return (
@@ -16,7 +16,7 @@ function Index() {
       <Gallary />
       <Productpage />
       <ContactUs />
-      
+      <Birthday />
     </>
   );
 }
