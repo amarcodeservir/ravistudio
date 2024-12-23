@@ -5,6 +5,10 @@ import About from "./Components/About/About";
 import BlogPage from "./Components/Blog/BlogPage";
 import Photography from "./Components/Photography/Photography";
 import Birthday from "./Components/HeaderPhotography/Birthday";
+import Fashion from "./Components/HeaderPhotography/Fashion";
+import kittyParty from "./Components/HeaderPhotography/KittyParty";
+
+
 
 function App() {
   return (
@@ -17,6 +21,10 @@ function App() {
           <Route path="/photography" element={<Photography />} />
           <Route path="/preWedding" element={<Photography />} />
           <Route path="Birthday" element={<Birthday />} />
+          <Route path="Fashion" element={<Fashion />} />
+          <Route path="kittyParty" element={<kittyParty />} />
+
+
         </Route>
       </Routes>
     </Router>
