@@ -4,6 +4,7 @@ import Index from "./Components/Home/Index";
 import About from "./Components/About/About";
 import BlogPage from "./Components/Blog/BlogPage";
 import Photography from "./Components/Photography/Photography";
+import Birthday from "./Components/HeaderPhotography/Birthday";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="blog" element={<BlogPage />} />
           <Route path="/photography" element={<Photography />} />
           <Route path="/preWedding" element={<Photography />} />
+          <Route path="Birthday" element={<Birthday />} />
         </Route>
       </Routes>
     </Router>

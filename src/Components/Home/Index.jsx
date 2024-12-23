@@ -16,7 +16,6 @@ function Index() {
       <Gallary />
       <Productpage />
       <ContactUs />
-      <Birthday />
     </>
   );
 }
