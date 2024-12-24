@@ -25,9 +25,10 @@ function App() {
             <Route path="/preWedding" element={<Photography />} />
             <Route path="Birthday" element={<Birthday />} />
             <Route path="ContactForm" element={<ContactForm />} />
+            <Route path="dashboard" element={<AdminDashboard />} />
 
             {/* Protected Route Example */}
-            {isAdmin && <Route path="dashboard" element={<AdminDashboard />} />}
+            {/* {isAdmin && <Route path="dashboard" element={<AdminDashboard />} />} */}
           </Route>
         </Routes>
       </ErrorBoundary>
