@@ -8,7 +8,7 @@ import Birthday from "./Components/HeaderPhotography/Birthday";
 import ContactForm from "./Components/Contact/ContactForm";
 import AdminDashboard from "./Components/Admin/AdminDashboard";
 import ErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary";
-
+//dsfhjhbajdhfjvbfgdojisof
 function App() {
   const { isAdmin, isUserLogin } = AdminDashboard();
 
@@ -16,7 +16,7 @@ function App() {
     <Router>
       <ErrorBoundary>
         <Routes>
-          {/* Main Layout Routes */}
+          {/* Main Layout Routes */}s
           <Route path="" element={<Layout />}>
             <Route path="/" element={<Index />} />
             <Route path="About" element={<About />} />
