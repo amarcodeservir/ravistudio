@@ -65,7 +65,7 @@ const Header = () => {
           <Dropdown photographySections={photographySections} />
 
           <Link
-            to="/contact"
+            to="/ContactForm"
             className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-black"
           >
             Book Us
@@ -110,7 +110,7 @@ const Header = () => {
             ))}
           </div>
           <Link
-            to="/contact"
+            to="/ContactForm"
             className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-black"
             onClick={handleToggleMenu}
           >

@@ -58,18 +58,20 @@ const Gallary = () => {
                   <h2 className="font-semibold text-lg text-white">
                     {item.title}
                   </h2>
-                  <Link
-                    to=""
-                    className="text-blue-400 hover:text-blue-200 underline"
-                  >
-                    View more
-                  </Link>
                 </div>
               </div>
             </div>
           </motion.div>
         ))}
       </section>
+      <div className="flex justify-center ">
+        <Link
+          to=""
+          className="text-white hover:text-black bg-primary hover:bg-slate-50 font-serif py-1 flex justify-center rounded-xl border-2 border-red-700 w-32"
+        >
+          View more
+        </Link>
+      </div>
     </div>
   );
 };
