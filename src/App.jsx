@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Main Layout Routes */}
+
         <Route path="" element={<Layout />}>
           <Route path="/" element={<Index />} />
           <Route path="About" element={<About />} />
