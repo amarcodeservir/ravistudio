@@ -1,7 +1,7 @@
 import React from "react";
-import birthdayImage1 from "../assets/HeaderPhotographyimg/birthday2.jpg"; // Replace with actual image paths
-import birthdayImage2 from "../assets/HeaderPhotographyimg/birthday1.jpg"; // Replace with actual image paths
-import birthdayImage3 from "../assets/HeaderPhotographyimg/birthday3.jpg"; // Replace with actual image paths
+import birthdayImage1 from "../assets/HeaderPhotographyimg/k1.jpeg"; // Replace with actual image paths
+import birthdayImage2 from "../assets/HeaderPhotographyimg/k2.jpeg"; // Replace with actual image paths
+import birthdayImage3 from "../assets/HeaderPhotographyimg/k3.jpeg"; // Replace with actual image paths
 
 const kittyParty = () => {
   return (

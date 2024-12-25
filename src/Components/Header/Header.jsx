@@ -11,13 +11,13 @@ const Header = () => {
   ];
 
   const photographySections = [
-    { name: "Wedding", path: "/photography/wedding" },
-    { name: "Pre-Wedding", path: "/photography/pre-wedding" },
-    { name: "Post-Wedding", path: "/photography/post-wedding" },
+    { name: "Wedding", path: "/wedding" },
+    { name: "Pre-Wedding", path: "/prewedding" },
+    { name: "Post-Wedding", path: "/postwedding" },
     { name: "Fashion", path: "/fashion" },
     { name: "Birthday", path: "/birthday" },
     { name: "Kitty Party", path: "/kittyparty" },
-    { name: "Maternity", path: "/photography/maternity" },
+    { name: "Maternity", path: "/maternity" },
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -60,7 +60,7 @@ const Header = () => {
               {link.name}
             </Link>
           ))}
-
+{/* dksjvsk jdhjgfadhfkjbjhsvdjbjvbdn*/}
           {/* Reusable Dropdown */}
           <Dropdown photographySections={photographySections} />
 

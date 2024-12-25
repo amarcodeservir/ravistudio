@@ -1,94 +1,82 @@
-import React from "react";
-import birthdayImage1 from "../assets/HeaderPhotographyimg/birthday2.jpg"; // Replace with actual image paths
-import birthdayImage2 from "../assets/HeaderPhotographyimg/birthday1.jpg"; // Replace with actual image paths
-import birthdayImage3 from "../assets/HeaderPhotographyimg/birthday3.jpg"; // Replace with actual image paths
+import React, { useState, useEffect } from 'react';
+import img0 from "../assets/HeaderPhotographyimg/girl1.jpg";
+import img1 from "../assets/HeaderPhotographyimg/girl2.jpg"; // Assuming different images
+import img2 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
+import img3 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
+import img4 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
+import img5 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
+import img6 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
+import img7 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
+import img8 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
+import img9 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
 
-const Fashion = () => {
+const images = [
+  { src: img0, alt: 'Fashion Look 1', label: 'Fashion Look 1' },
+  { src: img1, alt: 'Fashion Look 2', label: 'Fashion Look 2' },
+  { src: img2, alt: 'Fashion Look 3', label: 'Fashion Look 3' },
+  { src: img3, alt: 'Fashion Look 4', label: 'Fashion Look 4' },
+  { src: img4, alt: 'Fashion Look 5', label: 'Fashion Look 5' },
+  { src: img5, alt: 'Fashion Look 6', label: 'Fashion Look 6' },
+  { src: img6, alt: 'Fashion Look 7', label: 'Fashion Look 7' },
+  { src: img7, alt: 'Fashion Look 8', label: 'Fashion Look 8' },
+  { src: img8, alt: 'Fashion Look 9', label: 'Fashion Look 9' },
+  { src: img9, alt: 'Fashion Look 10', label: 'Fashion Look 10' }
+];
+
+function Fashion() {
+  const [shuffledImages, setShuffledImages] = useState([]);
+
+  // Shuffle images when the component mounts
+  useEffect(() => {
+    const shuffleArray = (array) => {
+      let shuffled = [...array];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // Swap elements
+      }
+      return shuffled;
+    };
+
+    setShuffledImages(shuffleArray(images));
+  }, []);
+
   return (
-    <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-16 px-6">
-      <div className="max-w-7xl mx-auto">
-        {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold">
-            Fashion Photography Services
-          </h1>
-          <p className="mt-4 text-lg sm:text-xl text-gray-200">
-            Turning your Fashion into a gallery of joyful memories that last forever.
-          </p>
-        </div>
+    <section className="bg-gray-50 py-36">
+      <div className="max-w-screen-xl mx-auto px-6 text-center">
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-8">Fashion Photography</h2>
+        <p className="text-lg text-gray-600 mb-12">
+          Explore the world of fashion through our lens. From stunning runway shots to captivating street fashion,
+          our photography captures the essence of style and beauty.
+        </p>
 
-        {/* Gallery Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
-          {/* Card 1 - Oval Shape */}
-          <div className="relative group rounded-full overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-105">
-            <img
-              src={birthdayImage1}
-              alt="Birthday Celebration"
-              className="w-full h-64 sm:h-80 object-cover transition-transform duration-300 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <div className="text-center text-white px-6">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-2">Joyful Smiles</h3>
-                <p className="text-sm sm:text-base mb-4">Every smile captured with care and creativity.</p>
-                <button className="bg-pink-500 px-6 py-2 rounded-full text-lg hover:bg-purple-500">
-                  View Gallery
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Card 2 - Hexagonal Shape */}
-          <div className="relative group overflow-hidden transform transition-all duration-500">
-            <div className="clip-hexagon overflow-hidden">
+        {/* Gallery */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {shuffledImages.map((image, index) => (
+            <div key={index} className="group relative">
               <img
-                src={birthdayImage2}
-                alt="Birthday Fun"
-                className="w-full h-64 sm:h-80 object-cover transition-transform duration-300 group-hover:scale-110"
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover rounded-lg shadow-lg transform transition-all group-hover:scale-105"
               />
-            </div>
-            <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <div className="text-center text-white px-6">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-2">Colorful Moments</h3>
-                <p className="text-sm sm:text-base mb-4">Add vibrant colors to your special day.</p>
-                <button className="bg-pink-500 px-6 py-2 rounded-full text-lg hover:bg-purple-500">
-                  Explore More
-                </button>
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 transition-all group-hover:opacity-100">
+                <p className="text-white text-xl font-bold">{image.label}</p>
               </div>
             </div>
-          </div>
-
-          {/* Card 3 - Circular Image */}
-          <div className="relative group overflow-hidden rounded-full w-full h-64 sm:h-80 shadow-xl mx-auto transform transition-all duration-500 hover:scale-105">
-            <img
-              src={birthdayImage3}
-              alt="Birthday Cake"
-              className="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <div className="text-center text-white px-6">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-2">Sweet Memories</h3>
-                <p className="text-sm sm:text-base mb-4">Because every cake deserves its spotlight.</p>
-                <button className="bg-pink-500 px-6 py-2 rounded-full text-lg hover:bg-purple-500">
-                  Book Now
-                </button>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
-        {/* Call to Action Section */}
-        <div className="text-center mt-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4">Make Every Birthday Special</h2>
-          <p className="text-lg sm:text-xl mb-8 max-w-lg mx-auto text-gray-200">
-            Whether it's your 1st or your 50th, our professional photography services will make your day unforgettable!
-          </p>
-          <button className="bg-white text-purple-500 px-10 py-4 rounded-full text-xl font-semibold hover:bg-pink-500 hover:text-white transition duration-300">
-            Book Your Session
+        {/* Call to Action */}
+        <div className="mt-12">
+          <button
+            className="bg-primary text-white font-semibold py-2 px-6 rounded-lg text-lg hover:bg-opacity-90 transition-all"
+            onClick={() => alert("Explore our full portfolio!")}
+          >
+            View More
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
-};
+}
 
 export default Fashion;

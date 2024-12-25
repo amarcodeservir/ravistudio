@@ -39,7 +39,7 @@ const Gallary = () => {
       {/* Gallery Section */}
       <section className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
         {galleryItems.map((item, index) => (
-          <motion.div
+          <div
             key={index} // Added a key prop to avoid React warnings
             className="group rounded overflow-hidden shadow-lg text-white wave-effect"
             whileHover={{ scale: 1.05, opacity: 0.8 }}
@@ -60,7 +60,7 @@ const Gallary = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </section>
       <div className="flex justify-center ">
