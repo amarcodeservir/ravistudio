@@ -1,7 +1,8 @@
 import React from "react";
-import weddingImage1 from "../assets/HeaderPhotographyimg/weddingimg1.jpg"; // Replace with actual image paths
-import weddingImage2 from "../assets/HeaderPhotographyimg/weddingimg2.jpg"; // Replace with actual image paths
-import weddingImage3 from "../assets/HeaderPhotographyimg/weddingimg3.jpg"; // Replace with actual image paths
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import weddingImage1 from "../assets/HeaderPhotographyimg/weddingimg1.jpg"; 
+import weddingImage2 from "../assets/HeaderPhotographyimg/weddingimg2.jpg"; 
+import weddingImage3 from "../assets/HeaderPhotographyimg/weddingimg3.jpg"; 
 
 const Wedding = () => {
   return (
@@ -19,7 +20,7 @@ const Wedding = () => {
 
         {/* Gallery Section */}
         <div className="space-y-10">
-          {/* Card 1 - Image on the left and content on the right */}
+          {/* Card 1 */}
           <div className="flex flex-col sm:flex-row items-center justify-between overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-105">
             <img
               src={weddingImage1}
@@ -31,16 +32,18 @@ const Wedding = () => {
               <p className="text-sm sm:text-base mb-4 text-gray-500">
                 The exchange of vows is a cherished moment. We focus on capturing the emotional essence of your ceremony, so you can relive those beautiful words forever. Our approach blends candid shots with elegant portraits, ensuring that every significant moment is captured.
               </p>
-              <button
-                aria-label="View wedding ceremony gallery"
-                className="bg-primary px-6 py-2 rounded-full text-lg text-white transition duration-300"
-              >
-                View Gallery
-              </button>
+              <Link to="/WeddingDetails"> {/* Corrected path */}
+                <button
+                  aria-label="View wedding ceremony gallery"
+                  className="bg-primary px-6 py-2 rounded-full text-lg text-white transition duration-300"
+                >
+                  View Gallery
+                </button>
+              </Link>
             </div>
           </div>
 
-          {/* Card 2 - Image on the left and content on the right */}
+          {/* Card 2 */}
           <div className="flex flex-col sm:flex-row items-center justify-between overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-105">
             <img
               src={weddingImage2}
@@ -52,16 +55,18 @@ const Wedding = () => {
               <p className="text-sm sm:text-base mb-4 text-gray-500">
                 Our couple portraits capture the magic between you and your soulmate. These moments celebrate your love, bringing out the joy and connection that makes your bond unique. Whether it's a soft, intimate portrait or a joyful laugh shared between you two, we are there to make it unforgettable.
               </p>
-              <button
-                aria-label="Explore couple moments"
-                className="bg-primary px-6 py-2 rounded-full text-lg text-white transition duration-300"
-              >
-                View Gallery
-              </button>
+              <Link to="/WeddingDetails"> {/* Corrected path */}
+                <button
+                  aria-label="Explore couple moments"
+                  className="bg-primary px-6 py-2 rounded-full text-lg text-white transition duration-300"
+                >
+                  View Gallery
+                </button>
+              </Link>
             </div>
           </div>
 
-          {/* Card 3 - Image on the left and content on the right */}
+          {/* Card 3 */}
           <div className="flex flex-col sm:flex-row items-center justify-between overflow-hidden shadow-xl transform transition-all duration-500 hover:scale-105">
             <img
               src={weddingImage3}
@@ -73,12 +78,14 @@ const Wedding = () => {
               <p className="text-sm sm:text-base mb-4 text-gray-500">
                 Weddings are more than just a ceremony; they are about the celebration with family and friends. Let us capture your joyful moments, from cutting the cake to the first dance, and all the way to the last celebratory toast. These moments are the heartbeat of your wedding, and we ensure they're perfectly preserved.
               </p>
-              <button
-                aria-label="Book your wedding photography session"
-                className="bg-primary px-6 py-2 rounded-full text-lg text-white transition duration-300"
-              >
-                View Gallery
-              </button>
+              <Link to="/WeddingDetails"> {/* Corrected path */}
+                <button
+                  aria-label="Book your wedding photography session"
+                  className="bg-primary px-6 py-2 rounded-full text-lg text-white transition duration-300"
+                >
+                  View Gallery
+                </button>
+              </Link>
             </div>
           </div>
         </div>

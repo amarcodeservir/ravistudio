@@ -12,7 +12,7 @@ import PostWedding from "./Components/HeaderPhotography/PostWedding";
 import Wedding from "./Components/HeaderPhotography/Wedding";
 import Fashion from "./Components/HeaderPhotography/Fashion";
 import Maternity from "./Components/HeaderPhotography/Maternity";
-
+import WeddingDetails from "./Components/HeaderPhotography/Wedinggallary";
 // testing development this is second push
 function App() {
   const { isAdmin, isUserLogin } = AdminDashboard();
@@ -35,6 +35,7 @@ function App() {
           <Route path="postwedding" element={<PostWedding/>} />
           <Route path="fashion" element={<Fashion />}/>
           <Route path="maternity" element={<Maternity />}/>
+          <Route path="WeddingDetails" element={<WeddingDetails />} />
         </Route>
       </Routes>
     </Router>
