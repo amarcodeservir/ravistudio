@@ -25,8 +25,7 @@ function App() {
           <Route path="ContactForm" element={<ContactForm />} />
           <Route path="dashboard" element={<AdminDashboard />} />
 
-          {/* Protected Route Example */}
-          {/* {isAdmin && <Route path="dashboard" element={<AdminDashboard />} />} */}
+          
         </Route>
       </Routes>
     </Router>
