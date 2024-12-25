@@ -7,7 +7,7 @@ import Photography from "./Components/Photography/Photography";
 import Birthday from "./Components/HeaderPhotography/Birthday";
 import ContactForm from "./Components/Contact/ContactForm";
 import AdminDashboard from "./Components/Admin/AdminDashboard";
-// testing development
+// testing development this is second push
 function App() {
   const { isAdmin, isUserLogin } = AdminDashboard();
 
