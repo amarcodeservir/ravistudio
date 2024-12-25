@@ -17,6 +17,7 @@ import {
   ArcElement,
 } from "chart.js";
 import { Pie } from "react-chartjs-2";
+import { Link } from "react-router-dom";
 
 ChartJS.register(
   CategoryScale,
@@ -109,78 +110,127 @@ const AdminDashboard = () => {
         {/* Total Orders */}
         <div className="flex items-center justify-between p-6 transition duration-300 bg-white rounded-lg shadow-lg hover:shadow-2xl">
           <div>
-            <h2 className="text-xl font-semibold text-gray-800">
-              Total Orders
-            </h2>
-            <p className="text-3xl font-bold text-blue-600">{ordersCount}</p>
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              Add Products
+            </Link>
           </div>
-          <div className="p-3 text-blue-600 bg-blue-100 rounded-full">
-            <AiOutlineShoppingCart size={40} />
+          <p className="text-3xl font-bold text-blue-600">{ordersCount}</p>
+          <div className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700">
+            <Link to="">All Products</Link>
           </div>
         </div>
 
         {/* Total Users */}
         <div className="flex items-center justify-between p-6 transition duration-300 bg-white rounded-lg shadow-lg hover:shadow-2xl">
           <div>
-            <h2 className="text-xl font-semibold text-gray-800">Total Users</h2>
-            <p className="text-3xl font-bold text-green-600">{usersCount}</p>
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              Add Gallary
+            </Link>
           </div>
-          <div className="p-3 text-green-600 bg-green-100 rounded-full">
-            <AiOutlineUser size={40} />
+          <p className="text-3xl font-bold text-green-600">{usersCount}</p>
+          <div>
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              All Gallary
+            </Link>
           </div>
         </div>
 
         {/* Total Items */}
         <div className="flex items-center justify-between p-6 transition duration-300 bg-white rounded-lg shadow-lg hover:shadow-2xl">
           <div>
-            <h2 className="text-xl font-semibold text-gray-800">Total Items</h2>
-            <p className="text-3xl font-bold text-purple-600">{itemsCount}</p>
-          </div>
-          <div className="p-3 text-purple-600 bg-purple-100 rounded-full">
-            <AiOutlineAppstoreAdd size={40} />
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              Add Blog
+            </Link>
+          </div>{" "}
+          <p className="text-3xl font-bold text-purple-600">{itemsCount}</p>
+          <div>
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              All Blog
+            </Link>
           </div>
         </div>
 
         {/* Live Orders */}
         <div className="flex items-center justify-between p-6 transition duration-300 bg-white rounded-lg shadow-lg hover:shadow-2xl">
           <div>
-            <h2 className="text-xl font-semibold text-gray-800">Live Orders</h2>
-            <p className="text-3xl font-bold text-orange-600">
-              {liveOrdersCount}
-            </p>
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              Add Photograph
+            </Link>
           </div>
-          <div className="p-3 text-orange-600 bg-orange-100 rounded-full">
-            <AiOutlineShoppingCart size={40} />
+          <p className="text-3xl font-bold text-orange-600">
+            {liveOrdersCount}
+          </p>
+          <div>
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              All Photograph
+            </Link>
           </div>
         </div>
 
         {/* Ongoing Orders */}
         <div className="flex items-center justify-between p-6 transition duration-300 bg-white rounded-lg shadow-lg hover:shadow-2xl">
           <div>
-            <h2 className="text-xl font-semibold text-gray-800">
-              Ongoing Orders
-            </h2>
-            <p className="text-3xl font-bold text-yellow-600">
-              {ongoingOrdersCount}
-            </p>
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              Add Products
+            </Link>
           </div>
-          <div className="p-3 text-yellow-600 bg-yellow-100 rounded-full">
-            <AiOutlineShoppingCart size={40} />
+          <p className="text-3xl font-bold text-yellow-600">
+            {ongoingOrdersCount}
+          </p>
+          <div>
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              Add Products
+            </Link>
           </div>
         </div>
 
         {/* Completed Orders */}
         <div className="flex items-center justify-between p-6 transition duration-300 bg-white rounded-lg shadow-lg hover:shadow-2xl">
           <div>
-            <h2 className="text-xl font-semibold text-gray-800">
-              Completed Orders
-            </h2>
-            <p className="text-3xl font-bold text-green-600">
-              {completedOrdersCount}
-            </p>
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              Add Products
+            </Link>
           </div>
-          <div className="p-3 text-green-600 bg-green-100 rounded-full">
-            <AiOutlineShoppingCart size={40} />
+          <p className="text-3xl font-bold text-green-600">
+            {completedOrdersCount}
+          </p>
+          <div>
+            <Link
+              to=""
+              className="p-3 text-blue-600 bg-blue-100 rounded-xl text-2xl border border-gray-700 "
+            >
+              Add Products
+            </Link>
           </div>
         </div>
       </div>
