@@ -6,15 +6,16 @@ import BlogPage from "./Components/Blog/BlogPage";
 import Photography from "./Components/Photography/Photography";
 import Birthday from "./Components/HeaderPhotography/Birthday";
 import ContactForm from "./Components/Contact/ContactForm";
-import AdminDashboard from "./Components/Admin/AdminDashboard";
+import AdminDashboard from "./Admin/MenuPages/AdminDashboard";
+// import AdLayout from "./Admin/AdLayout";
 
 function App() {
-  const { isAdmin, isUserLogin } = AdminDashboard();
+  const { isAdmin, isUserLogin } = AdminDashboard(); // This is incorrect, should be removed or handled differently.
 
   return (
     <Router>
       <Routes>
-
+        {/* Public routes */}
         <Route path="" element={<Layout />}>
           <Route path="/" element={<Index />} />
           <Route path="About" element={<About />} />
@@ -23,10 +24,10 @@ function App() {
           <Route path="/preWedding" element={<Photography />} />
           <Route path="Birthday" element={<Birthday />} />
           <Route path="ContactForm" element={<ContactForm />} />
-          <Route path="dashboard" element={<AdminDashboard />} />
-
-          
+          <Route path="/admin" element={<AdminDashboard />} />
         </Route>
+
+
       </Routes>
     </Router>
   );
