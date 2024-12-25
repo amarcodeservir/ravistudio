@@ -14,9 +14,9 @@ const Header = () => {
     { name: "Wedding", path: "/photography/wedding" },
     { name: "Pre-Wedding", path: "/photography/pre-wedding" },
     { name: "Post-Wedding", path: "/photography/post-wedding" },
-    { name: "Fashion", path: "/photography/fashion" },
+    { name: "Fashion", path: "/fashion" },
     { name: "Birthday", path: "/birthday" },
-    { name: "Kitty Party", path: "/photography/kittyparty" },
+    { name: "Kitty Party", path: "/kittyparty" },
     { name: "Maternity", path: "/photography/maternity" },
   ];
 

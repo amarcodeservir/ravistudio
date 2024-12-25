@@ -7,31 +7,27 @@ import Photography from "./Components/Photography/Photography";
 import Birthday from "./Components/HeaderPhotography/Birthday";
 import ContactForm from "./Components/Contact/ContactForm";
 import AdminDashboard from "./Components/Admin/AdminDashboard";
-import ErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary";
-//dsfhjhbajdhfjvbfgdojisofsdfsdfsd
-// sifgyisdfhgius
+// testing development this is second push
 function App() {
   const { isAdmin, isUserLogin } = AdminDashboard();
 // sdjkhbfjjsdhbdhbv
   return (
     <Router>
-      <ErrorBoundary>
-        <Routes>
-          {/* Main Layout Routes */}s
-          <Route path="" element={<Layout />}>
-            <Route path="/" element={<Index />} />
-            <Route path="About" element={<About />} />
-            <Route path="blog" element={<BlogPage />} />
-            <Route path="/photography" element={<Photography />} />
-            <Route path="/preWedding" element={<Photography />} />
-            <Route path="Birthday" element={<Birthday />} />
-            <Route path="ContactForm" element={<ContactForm />} />
+      <Routes>
 
-            {/* Protected Route Example */}
-            {isAdmin && <Route path="dashboard" element={<AdminDashboard />} />}
-          </Route>
-        </Routes>
-      </ErrorBoundary>
+        <Route path="" element={<Layout />}>
+          <Route path="/" element={<Index />} />
+          <Route path="About" element={<About />} />
+          <Route path="blog" element={<BlogPage />} />
+          <Route path="/photography" element={<Photography />} />
+          <Route path="/preWedding" element={<Photography />} />
+          <Route path="Birthday" element={<Birthday />} />
+          <Route path="ContactForm" element={<ContactForm />} />
+          <Route path="dashboard" element={<AdminDashboard />} />
+
+          
+        </Route>
+      </Routes>
     </Router>
   );
 }
