@@ -60,7 +60,7 @@ const Header = () => {
               {link.name}
             </Link>
           ))}
-{/* dksjvsk */}
+{/* dksjvsk jdhjgfadhfkjbjhsvdjbjvbdn*/}
           {/* Reusable Dropdown */}
           <Dropdown photographySections={photographySections} />
 
