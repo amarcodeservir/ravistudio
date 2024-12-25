@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import image1 from "../../Components/assets/gallary/gallary0.jpg";
 import image2 from "../../Components/assets/gallary/gallary.jpg";
 import image3 from "../../Components/assets/gallary/gallary1.png";

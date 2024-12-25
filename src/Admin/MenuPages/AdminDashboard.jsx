@@ -5,7 +5,7 @@ import {
   AiOutlineUser,
   AiOutlineAppstoreAdd,
 } from "react-icons/ai";
-import { Pie } from "react-chartjs-2";
+// import { Pie } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -16,6 +16,7 @@ import {
   Legend,
   ArcElement,
 } from "chart.js";
+import { Pie } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
