@@ -2,6 +2,7 @@ import React from "react";
 import Image1 from "../assets/HeaderPhotographyimg/post2.jpg"; // Replace with actual image paths
 import Image2 from "../assets/HeaderPhotographyimg/post3.jpeg"; // Replace with actual image paths
 import Image3 from "../assets/HeaderPhotographyimg/post3.jpeg"; // Replace with actual image paths
+import { Link } from "react-router-dom";
 
 const PostWedding = () => {
   return (
@@ -31,12 +32,13 @@ const PostWedding = () => {
               <p className="text-sm sm:text-base mb-4 text-gray-500">
                 Post-wedding photography captures the beauty of your love after the big day. These sessions highlight your happiness and the joy of being newlywed.
               </p>
-              <button
-                aria-label="View post-wedding gallery"
-                className="bg-purple-500 px-6 py-2 rounded-full text-lg text-white transition duration-300"
-              >
-                View Gallery
-              </button>
+              <Link to="/WeddingDetails">
+                <button
+                  aria-label="View pre-wedding gallery"
+                  className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:border border-primary hover:text-black"                >
+                  View Gallery
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -52,12 +54,13 @@ const PostWedding = () => {
               <p className="text-sm sm:text-base mb-4 text-gray-500">
                 Let your love shine in the post-wedding photos. Whether it’s a relaxed outdoor shoot or a stylized indoor shoot, we capture the happiness and bliss of your post-wedding life.
               </p>
-              <button
-                aria-label="Explore more post-wedding moments"
-                className="bg-purple-500 px-6 py-2 rounded-full text-lg text-white transition duration-300"
-              >
-                Explore More
-              </button>
+              <Link to="/WeddingDetails">
+                <button
+                  aria-label="View pre-wedding gallery"
+                  className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:border border-primary hover:text-black"                >
+                  View Gallery
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -73,12 +76,13 @@ const PostWedding = () => {
               <p className="text-sm sm:text-base mb-4 text-gray-500">
                 Post-wedding sessions offer the opportunity to relive your happiest moments and mark the beginning of a new chapter in your love story.
               </p>
-              <button
-                aria-label="Book your post-wedding photography session"
-                className="bg-purple-500 px-6 py-2 rounded-full text-lg text-white transition duration-300"
-              >
-                Book Now
-              </button>
+              <Link to="/WeddingDetails">
+                <button
+                  aria-label="View pre-wedding gallery"
+                  className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:border border-primary hover:text-black"                >
+                  View Gallery
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -89,12 +93,14 @@ const PostWedding = () => {
           <p className="text-lg sm:text-xl mb-8 max-w-lg mx-auto text-gray-500">
             Capture the start of your new life together with professional post-wedding photography that will stay with you forever.
           </p>
-          <button
-            aria-label="Book your post-wedding photography session"
-            className="bg-purple-500 text-white border border-purple-700 px-6 py-2 rounded-full text-lg text-white transition duration-300 hover:bg-pink-500 hover:text-white"
-          >
-            Book Your Session
-          </button>
+          <Link to="/ContactForm">
+            <button
+              aria-label="Book your post-wedding photography session"
+              className="bg-secondary text-black border border-primary px-6 py-2 rounded-full text-lg transition duration-300 hover:bg-primary hover:text-white"
+            >
+              Book Your Session
+            </button>
+          </Link>
         </div>
       </div>
     </div>

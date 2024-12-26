@@ -9,6 +9,7 @@ import img6 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming differe
 import img7 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
 import img8 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
 import img9 from "../assets/HeaderPhotographyimg/girl3.jpg"; // Assuming different images
+import { Link } from 'react-router-dom';
 
 const images = [
   { src: img0, alt: 'Fashion Look 1', label: 'Fashion Look 1' },
@@ -66,14 +67,16 @@ function Fashion() {
         </div>
 
         {/* Call to Action */}
+        <Link to="/ContactForm">
         <div className="mt-12">
           <button
-            className="bg-primary text-white font-semibold py-2 px-6 rounded-lg text-lg hover:bg-opacity-90 transition-all"
-            onClick={() => alert("Explore our full portfolio!")}
+            className="bg-secondary text-black border border-primary px-6 py-2 rounded-full text-lg transition duration-300 hover:bg-primary hover:text-white"
+            onClick={() => alert("Explore our Gallary!")}
           >
-            View More
+            Book Your Session
           </button>
         </div>
+        </Link>
       </div>
     </section>
   );

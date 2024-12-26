@@ -82,9 +82,11 @@ const kittyParty = () => {
           <p className="text-lg mb-8 max-w-lg mx-auto text-gray-200">
             Whether it's your 1st or your 50th, our professional photography services will make your day unforgettable!
           </p>
-          <button className="bg-white text-purple-500 px-10 py-4 rounded-full text-xl font-semibold hover:bg-pink-500 hover:text-white transition duration-300">
+          <Link to="/ContactForm">
+          <button className="bg-secondary text-black border border-primary px-6 py-2 rounded-full text-lg transition duration-300 hover:bg-primary hover:text-white">
             Book Your Session
           </button>
+          </Link>
         </div>
       </div>
     </div>

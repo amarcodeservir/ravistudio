@@ -30,7 +30,7 @@ const Birthday = () => {
               <div className="text-center text-white px-6">
                 <h3 className="text-3xl font-semibold mb-2">Joyful Smiles</h3>
                 <p className="text-sm mb-4">Every smile captured with care and creativity.</p>
-                <button className="bg-pink-500 px-6 py-2 rounded-full text-lg hover:bg-purple-500">
+                <button className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-black" >
                   View Gallery
                 </button>
               </div>
@@ -50,7 +50,7 @@ const Birthday = () => {
               <div className="text-center text-white px-6">
                 <h3 className="text-3xl font-semibold mb-2">Colorful Moments</h3>
                 <p className="text-sm mb-4">Add vibrant colors to your special day.</p>
-                <button className="bg-pink-500 px-6 py-2 rounded-full text-lg hover:bg-purple-500">
+                <button className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-black" >
                   Explore More
                 </button>
               </div>
@@ -68,7 +68,7 @@ const Birthday = () => {
               <div className="text-center text-white px-6">
                 <h3 className="text-3xl font-semibold mb-2">Sweet Memories</h3>
                 <p className="text-sm mb-4">Because every cake deserves its spotlight.</p>
-                <button className="bg-pink-500 px-6 py-2 rounded-full text-lg hover:bg-purple-500">
+                <button className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:text-black" >
                   Book Now
                 </button>
               </div>
@@ -82,9 +82,11 @@ const Birthday = () => {
           <p className="text-lg mb-8 max-w-lg mx-auto text-gray-200">
             Whether it's your 1st or your 50th, our professional photography services will make your day unforgettable!
           </p>
-          <button className="bg-white text-purple-500 px-10 py-4 rounded-full text-xl font-semibold hover:bg-pink-500 hover:text-white transition duration-300">
+          <Link to="/ContactForm">
+          <button className="bg-secondary text-black border border-primary px-6 py-2 rounded-full text-lg transition duration-300 hover:bg-primary hover:text-white">
             Book Your Session
           </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -35,8 +35,8 @@ const Wedding = () => {
               <Link to="/WeddingDetails"> {/* Corrected path */}
                 <button
                   aria-label="View wedding ceremony gallery"
-                  className="bg-primary px-6 py-2 rounded-full text-lg text-white transition duration-300"
-                >
+                  className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:border border-primary hover:text-black"                >
+
                   View Gallery
                 </button>
               </Link>
@@ -58,8 +58,8 @@ const Wedding = () => {
               <Link to="/WeddingDetails"> {/* Corrected path */}
                 <button
                   aria-label="Explore couple moments"
-                  className="bg-primary px-6 py-2 rounded-full text-lg text-white transition duration-300"
-                >
+                  className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:border border-primary hover:text-black"                >
+
                   View Gallery
                 </button>
               </Link>
@@ -81,8 +81,8 @@ const Wedding = () => {
               <Link to="/WeddingDetails"> {/* Corrected path */}
                 <button
                   aria-label="Book your wedding photography session"
-                  className="bg-primary px-6 py-2 rounded-full text-lg text-white transition duration-300"
-                >
+                  className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:border border-primary hover:text-black"                >
+
                   View Gallery
                 </button>
               </Link>
@@ -96,12 +96,14 @@ const Wedding = () => {
           <p className="text-lg sm:text-xl mb-8 max-w-lg mx-auto text-gray-500">
             From your first kiss to the final dance, we'll be there to preserve every beautiful moment of your wedding. Our photography service is tailored to your unique style and preferences, ensuring that every shot captures your love story in its purest form.
           </p>
+          <Link to="/ContactForm">
           <button
             aria-label="Book your wedding photography session"
             className="bg-secondary text-black border border-primary px-6 py-2 rounded-full text-lg transition duration-300 hover:bg-primary hover:text-white"
           >
             Book Your Session
           </button>
+          </Link>
         </div>
       </div>
     </div>

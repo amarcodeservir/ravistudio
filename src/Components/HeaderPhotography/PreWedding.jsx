@@ -2,6 +2,7 @@ import React from "react";
 import img1 from "../assets/HeaderPhotographyimg/pre1.jpg"; // Replace with actual image paths
 import img2 from "../assets/HeaderPhotographyimg/pre2.jpg"; // Replace with actual image paths
 import img3 from "../assets/HeaderPhotographyimg/pre3.jpg"; // Replace with actual image paths
+import { Link } from "react-router-dom";
  
 
 const PreWedding = () => {
@@ -32,12 +33,14 @@ const PreWedding = () => {
               <p className="text-sm sm:text-base mb-4 text-gray-500">
                 Pre-wedding photography is the perfect way to showcase your love and chemistry before the wedding. These moments are about capturing your bond, shared laughter, and anticipation for your upcoming day.
               </p>
+              <Link to="/WeddingDetails">
               <button
                 aria-label="View pre-wedding gallery"
-                className="bg-purple-500 px-6 py-2 rounded-full text-lg text-white transition duration-300"
-              >
+                className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:border border-primary hover:text-black"                >
+              
                 View Gallery 
               </button>
+              </Link>
             </div>
           </div>
 
@@ -53,12 +56,14 @@ const PreWedding = () => {
               <p className="text-sm sm:text-base mb-4 text-gray-500">
                 Whether it's a casual outdoor shoot or a styled session, we aim to bring out the best of your pre-wedding excitement. These photos will add a personal touch to your wedding album, capturing moments of fun and spontaneity.
               </p>
+               <Link to="/WeddingDetails">
               <button
-                aria-label="Explore more pre-wedding moments"
-                className="bg-purple-500 px-6 py-2 rounded-full text-lg text-white transition duration-300"
-              >
-                Explore More
+                aria-label="View pre-wedding gallery"
+                className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:border border-primary hover:text-black"                >
+              
+                View Gallery 
               </button>
+              </Link>
             </div>
           </div>
 
@@ -74,12 +79,14 @@ const PreWedding = () => {
               <p className="text-sm sm:text-base mb-4 text-gray-500">
                 Pre-wedding shoots allow us to capture the pure joy and love between you and your partner. The beauty of these sessions lies in the quiet moments and intimate connections shared before the big day.
               </p>
+              <Link to="/WeddingDetails">
               <button
-                aria-label="Book your pre-wedding photography session"
-                className="bg-purple-500 px-6 py-2 rounded-full text-lg text-white transition duration-300"
-              >
-                Book Now
+                aria-label="View pre-wedding gallery"
+                className="bg-primary text-secondary px-6 py-2 rounded-full transition duration-300 hover:bg-secondary hover:border border-primary hover:text-black"                >
+              
+                View Gallery 
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -90,12 +97,14 @@ const PreWedding = () => {
           <p className="text-lg sm:text-xl mb-8 max-w-lg mx-auto text-gray-500">
             Let us tell your love story through beautiful pre-wedding photographs. Whether it's a romantic, whimsical, or fun shoot, we ensure every moment is perfectly captured.
           </p>
+          <Link to="/ContactForm">
           <button
             aria-label="Book your pre-wedding photography session"
-            className="bg-purple-500 text-white border border-purple-700 px-6 py-2 rounded-full text-lg transition duration-300 hover:bg-pink-500 hover:text-white"
+            className="bg-secondary text-black border border-primary px-6 py-2 rounded-full text-lg transition duration-300 hover:bg-primary hover:text-white"
           >
             Book Your Session
           </button>
+          </Link>
         </div>
       </div>
     </div>
